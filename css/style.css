@@ -1,0 +1,179 @@
+* {
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%; 
+}
+
+/* [class^="col-"] {
+	border: 1px solid blue;
+}
+[class^="row-"] {
+	border: 1px solid red;
+} */
+
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: url('../img/bg.png') repeat;
+  font-size: 16px;
+}
+
+h2{
+    margin: 0;     
+    color: #666;
+    padding-top: 90px;
+    font-size: 52px;
+    font-family: "trebuchet ms", sans-serif;    
+}
+
+.row-flex {
+	margin-right: 0;
+	margin-left: 0;
+}
+.header {
+	background: url('../img/header-bg.png');
+}
+
+nav {
+	background: rgba(0,0,0,0);
+}
+
+.content {
+  flex: 1;
+  /* background: #ddd; */
+}
+
+.slider {
+	/* background-color: #222836; */
+}
+
+.col-md-12 {
+	padding: 0;
+}
+
+.item{   
+    background-color: #222836;
+    text-align: center;
+    height: 300px !important;
+}
+
+.carousel-control.left, .carousel-control.right {
+	/* background: #222836; */
+	background-image: none;
+}
+/* li {
+	display: inline-block;
+	position: relative;
+} */
+
+/* li:not(:last-child)::after {
+	content: '';
+	display: block;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	background-color: #000;
+	position: absolute;
+	left: 9px;
+	top: 9px;
+} */
+
+
+.news {
+	border-bottom: 1px solid #919090;
+	margin-bottom: 50px;
+	padding-bottom: 30px;
+	text-align: justify;
+}
+
+.footer {
+	background: url('../img/footer-bg.png') no-repeat bottom left; 
+}
+
+.copy {
+	font-size: 12px;
+	color: #fff;
+	font-family: Calibri;
+	font-weight: 400;
+
+}
+
+.col-xs-3 ul {
+	list-style: none;
+	color: #010101;
+	font-family: Calibri;
+	font-size: .8em;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+.calendar-bg {
+	background: url('../img/calendar-bg.png') repeat;
+	padding-bottom: 10px;
+}
+
+#calendar .fc-day {
+	/* margin: 5px; */
+}
+
+#calendar .fc-day-top {
+	background-color: #f4f5f8;
+	background-image: linear-gradient(to top, #aeaeae 0%, #bfbfbf 95%, #dedede 100%, #dedede 100%);
+	box-shadow: 0.5px 0.9px 0 rgba(0, 0, 0, 0.49);
+}
+
+#calendar .fc-day-header {
+	background: #000;
+	
+}
+
+#calendar .fc-left h2 {
+	padding-top: 0;
+	font-size: 35px;
+}
+
+.navbar-default {
+	background-color: transparent;
+	border-color: transparent;
+}
+.navbar-nav {
+	text-align: center;
+	width: 100%;
+	
+}
+.navbar-nav > li {
+	display: inline-block;
+	float: none;
+}
+
+.navbar-default .navbar-nav  li  a {
+	color: #0a0a0a;
+	font-family: "Times New Roman";
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 14px;
+	text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+	.navbar-nav > li {
+		display: block;
+		/* float: left; */
+	}
+	.navbar-nav {
+	text-align: left;
+	/* width: 100%; */
+	}
+	.navbar-default .navbar-toggle {
+	background-color: #ddd;
+	
+	}
+	.navbar-default .navbar-nav  li  a {
+	font-size: 16px;
+	}
+}
